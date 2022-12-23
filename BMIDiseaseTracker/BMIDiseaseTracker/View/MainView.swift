@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     @State var activeView: Int = 0
+    @State var profileManager = ProfileManager.shared // only deal with the singleton so whenever we use the amount or anything will only interact with single object
     
     var body: some View {
         GeometryReader { geo in
@@ -29,6 +30,14 @@ struct MainView: View {
                                         .resizable()
                                         .scaledToFit()
                                         .frame(height: 13)
+                                    Spacer()
+                                    Image(systemName: "dollarsign.circle.fill")
+                                        .resizable()
+                                        .foregroundColor(.white)
+                                        .scaledToFit()
+                                        .frame(height: 20)
+                                    Text(" \(profileManager.balance.getBalance())")
+                                        .foregroundColor(.white)
                                     Spacer()
                                     VStack(spacing: 3) {
                                         Image(systemName: "circle.fill")
@@ -168,6 +177,18 @@ struct MainView: View {
                     }
                 )
                 .edgesIgnoringSafeArea(.all)
+            }
+            .onAppear {
+                ProfileManager.shared.fetchProfile(forUserID: 1) { result in //depending on actual userId when login or get the amount directly from AuthManager would be a better solution
+                    switch result {
+                    case .success(let profile):
+                        self.profileManager.profile = profile
+                    case .failure(let error):
+                        print(error)
+                        // error handler
+                        break
+                    }
+                }
             }
             .navigationViewStyle(.stack)
         }

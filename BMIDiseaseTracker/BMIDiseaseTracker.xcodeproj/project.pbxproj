@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B72B0C6295571810008DD1A /* LongCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B72B0C5295571810008DD1A /* LongCurrency.swift */; };
+		3B72B0C8295572C90008DD1A /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B72B0C7295572C90008DD1A /* ProfileManager.swift */; };
 		661CFDCA28036C9700043F2F /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661CFDC928036C9700043F2F /* ViewExtension.swift */; };
 		661CFDCC28036CC600043F2F /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661CFDCB28036CC600043F2F /* RoundedCorner.swift */; };
 		661CFDCE28036CEC00043F2F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661CFDCD28036CEC00043F2F /* HomeView.swift */; };
@@ -68,6 +70,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B72B0C5295571810008DD1A /* LongCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongCurrency.swift; sourceTree = "<group>"; };
+		3B72B0C7295572C90008DD1A /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
 		661CFDC928036C9700043F2F /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		661CFDCB28036CC600043F2F /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		661CFDCD28036CEC00043F2F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -309,6 +313,8 @@
 				667DB30027FEFBB60036B969 /* PopoverManager.swift */,
 				663E0AC82802869100428639 /* AuthManager.swift */,
 				663E0AD228028B4400428639 /* HealthKitManager.swift */,
+				3B72B0C5295571810008DD1A /* LongCurrency.swift */,
+				3B72B0C7295572C90008DD1A /* ProfileManager.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -454,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				667F1BAF27FCFD2900735018 /* ViewManager.swift in Sources */,
+				3B72B0C6295571810008DD1A /* LongCurrency.swift in Sources */,
 				663E0AC92802869100428639 /* AuthManager.swift in Sources */,
 				663A1B5D27FDD7FE001FA179 /* MainView.swift in Sources */,
 				667F1BB127FCFDB600735018 /* AdvantagesView.swift in Sources */,
@@ -477,6 +484,7 @@
 				663A1B6627FE490B001FA179 /* SignUpView.swift in Sources */,
 				663E0AE12802925900428639 /* AuthPageLogo.swift in Sources */,
 				663A1B6427FE451C001FA179 /* StringExtension.swift in Sources */,
+				3B72B0C8295572C90008DD1A /* ProfileManager.swift in Sources */,
 				667F1B7A27FC9E2100735018 /* BMIDiseaseTrackerApp.swift in Sources */,
 				667F1BAA27FCAB9100735018 /* UIColorExtension.swift in Sources */,
 				661CFDCA28036C9700043F2F /* ViewExtension.swift in Sources */,
